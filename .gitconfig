@@ -1,0 +1,44 @@
+[user]
+	email = magnus.halvorsen@kdi.kongsberg.com
+	name = Magnus Halvorsen
+[alias]
+  ci = commit
+  cim = commit -m
+  co = checkout
+  sd = show --pretty=format:%b
+  st = status
+  dom = diff origin/develop..HEAD
+  lom = log origin/develop..HEAD
+  diffc = diff --cached
+  diffo = diff origin..
+  diffnew = diff master.. -R
+  g = grep -i -p
+  xone = log --oneline --decorate
+  one = log --pretty=format:'%C(auto)%h%d %s %C(8)(%an,%C(239) %ai)'
+  new = log --pretty=format:'%C(auto)%h%d %s %C(8)(%an,%C(239) %ai)' master..
+  graph = log --oneline --decorate --graph
+  pop = stash pop
+  pow = "!git stash; git pull; git pop"
+  rbthis = rebase -i @{u}
+  amend = commit --amend
+  unmerged = branch --no-merged
+  branch-clean="!git remote prune origin"
+  topic = checkout develop -b
+  topicup = "!git fetch origin develop:develop && git rebase develop"
+  topicfix = "!git fetch origin develop:develop && git rebase origin/develop -i"
+  npush="!git push --set-upstream origin \"$(git symbolic-ref --short HEAD)\""
+
+[ui]
+  color = core
+
+[color]
+  ui = true
+[push]
+  default = upstream
+[pull]
+	rebase = true
+[core]
+  editor = /usr/bin/vim
+
+[credential]
+	helper = store
