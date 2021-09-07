@@ -9,4 +9,4 @@ sudo dpkg -i ripgrep_12.1.1_amd64.deb
 sudo apt-get install fzf
 
 # zoxide - better cd
-apt install zoxide
+curl -sS https://webinstall.dev/zoxide | bash
