@@ -14,3 +14,7 @@ curl -sS https://webinstall.dev/zoxide | bash
 cp .gitconfig ~/
 cp .bashrc ~/
 source ~/.bashrc
+
+#Starship - prompt
+sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+cp -r ./config ~/
