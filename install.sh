@@ -11,10 +11,7 @@ sudo apt-get install fzf
 # zoxide - better cd
 curl -sS https://webinstall.dev/zoxide | bash
 
-cp .gitconfig ~/
-cp .bashrc ~/
-source ~/.bashrc
-
 #Starship - prompt
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
-cp -r ./config ~/
+
+./update_config.sh
