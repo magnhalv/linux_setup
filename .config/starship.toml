@@ -26,6 +26,7 @@ behind = "<"
 diverged = "<>"
 renamed = "r"
 deleted = "x"
+style = "bold #D89216"
 
 [aws]
 disabled = true
