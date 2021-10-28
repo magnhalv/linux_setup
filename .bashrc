@@ -700,6 +700,10 @@ PROMPT_COMMAND='__setprompt'
 alias gs='git status'
 alias docker-ps='docker ps -a --format "table {{.ID}}\t{{.Image}}\t{{.Names}}"'
 
+#Kongsberg related
+alias tp='cd ~/repos/TheProduct'
+alias start='cd ~/repos/TheProduct && ./start-backend-wsl.sh'
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 source "$HOME/.cargo/env"
 
