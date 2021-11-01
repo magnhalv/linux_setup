@@ -18,7 +18,7 @@ tag_symbol = " tag "
 [git_branch]
 symbol = ""
 format = "on [$branch]($style) "
-style = "bold yellow"
+style = "bold #D89216"
 
 [git_status]
 ahead = ">"
@@ -26,7 +26,7 @@ behind = "<"
 diverged = "<>"
 renamed = "r"
 deleted = "x"
-style = "bold #D89216"
+style = "bold yellow"
 
 [aws]
 disabled = true
