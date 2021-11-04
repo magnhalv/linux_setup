@@ -93,6 +93,7 @@ symbol = "nix "
 symbol = "ml "
 
 [package]
+disabled = true
 symbol = "pkg "
 
 [perl]
@@ -112,6 +113,7 @@ format = ""
 symbol = "rb "
 
 [rust]
+disabled = true
 symbol = "rs "
 
 [scala]
