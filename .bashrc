@@ -699,6 +699,7 @@ PROMPT_COMMAND='__setprompt'
 
 alias gs='git status'
 alias docker-ps='docker ps -a --format "table {{.ID}}\t{{.Image}}\t{{.Names}}"'
+alias br='source ~/.bashrc' 
 
 #Kongsberg related
 alias tp='cd ~/repos/TheProduct'
