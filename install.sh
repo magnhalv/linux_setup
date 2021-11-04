@@ -14,4 +14,8 @@ curl -sS https://webinstall.dev/zoxide | bash
 #Starship - prompt
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
+# emacs
+sudo add-apt-repository ppa:kelleyk/emacs
+sudo apt install emacs26-nox
+
 ./update_config.sh

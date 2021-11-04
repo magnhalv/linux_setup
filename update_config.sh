@@ -7,3 +7,6 @@ cp -r .config ~/
 # Bashrc
 cp .bashrc ~/
 source ~/.bashrc
+
+#emacs
+cp -a ./emacs/. ~/
