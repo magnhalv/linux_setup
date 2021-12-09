@@ -1,3 +1,6 @@
+#install rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 # fd - simpler find file
 sudo apt install fd-find
 
