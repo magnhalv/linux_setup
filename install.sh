@@ -11,6 +11,9 @@ sudo dpkg -i ripgrep_12.1.1_amd64.deb
 #fzf - fuzzy finder, used by zoxide
 sudo apt-get install fzf
 
+#bat - cat with syntax highlightning
+sudo apt-get install bat
+
 # zoxide - better cd
 curl -sS https://webinstall.dev/zoxide | bash
 
