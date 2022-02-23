@@ -13,6 +13,8 @@ sudo apt-get install fzf
 
 #bat - cat with syntax highlightning
 sudo apt-get install bat
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
 
 # zoxide - better cd
 curl -sS https://webinstall.dev/zoxide | bash
