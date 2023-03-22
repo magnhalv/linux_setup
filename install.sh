@@ -9,7 +9,9 @@ curl -LO https://github.com/BurntSushi/ripgrep/releases/download/12.1.1/ripgrep_
 sudo dpkg -i ripgrep_12.1.1_amd64.deb
 
 #fzf - fuzzy finder, used by zoxide
-sudo apt-get install fzf
+# Use install script, since it provides fzf keybindings of Ctrl+R and ALt+C
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 
 #bat - cat with syntax highlightning
 sudo apt-get install bat
