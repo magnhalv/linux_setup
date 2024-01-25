@@ -406,3 +406,5 @@ eval "$(starship init bash)"
 source <(ng completion script)
 
 export SCONSFLAGS='-j12'
+
+alias aaf = "git add . && git amend && git push --force"

@@ -26,6 +26,6 @@ sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
 # emacs
 sudo add-apt-repository ppa:kelleyk/emacs
-sudo apt install emacs26-nox
+sudo apt install emacs28
 
 ./update_config.sh
