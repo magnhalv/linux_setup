@@ -1,9 +1,8 @@
 [user]
-	email = magnus.halvorsen@kdi.kongsberg.com
 	name = Magnus Halvorsen
 [alias]
-  ci = commit
-  cim = commit -m
+  c = commit
+  cm = commit -m
   co = checkout
   sd = show --pretty=format:%b
   st = status
