@@ -5,8 +5,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sudo apt install fd-find
 
 # Ripgrep - better grep
-curl -LO https://github.com/BurntSushi/ripgrep/releases/download/12.1.1/ripgrep_12.1.1_amd64.deb
-sudo dpkg -i ripgrep_12.1.1_amd64.deb
+curl -LO https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep_14.1.0-1_amd64.deb
+sudo dpkg -i ripgrep_14.1.0-1_amd64.deb
 
 #fzf - fuzzy finder, used by zoxide
 # Use install script, since it provides fzf keybindings of Ctrl+R and ALt+C
@@ -24,8 +24,12 @@ curl -sS https://webinstall.dev/zoxide | bash
 #Starship - prompt
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
-# emacs
-sudo add-apt-repository ppa:kelleyk/emacs
-sudo apt install emacs28
+# nvim
+mkdir -p ~/.local/apps/
+curl -LO https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-linux64.tar.gz
+tar xzvf nvim-linux64.tar.gz
+mv nvim-linux64 ~/.local/apps/
+sudo ln -s ~/.local/apps/nvim-linux64/bin/nvim /usr/bin/nvim
+
 
 ./update_config.sh
