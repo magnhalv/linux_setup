@@ -31,5 +31,7 @@ tar xzvf nvim-linux64.tar.gz
 mv nvim-linux64 ~/.local/apps/
 sudo ln -s ~/.local/apps/nvim-linux64/bin/nvim /usr/bin/nvim
 
+# Build system
+cargo install just
 
 ./update_config.sh
